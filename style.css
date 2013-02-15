@@ -1,0 +1,79 @@
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 18px Helvetica, sans-serif;
+  color: #333;
+  background: #d2e1b8;
+}
+
+h1 {
+  color: #41762e;
+  margin: 0 0 10px 0;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+
+h2+h4 {
+  font-weight: normal;
+  font-size: 18px;
+  margin: -20px 0 20px 0;
+}
+
+.page {
+  background-color: #fff;
+  border: solid 1px #cda;
+  overflow: auto;
+  margin: 10px;
+  padding: 10px;
+}
+
+.main-image {
+  background: url('show_and_tell_for_makers.jpg') 50% 50%;
+  background-size: cover;
+  height: 200px;
+  border: solid 1px #ddd;
+  margin: 0 0 10px 10px;
+}
+
+.alert {
+  color: #c00;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 450px) {
+  .main-image {
+    float: right;
+    width: 50%;
+    height: 305px;
+    background-size: auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    margin: 0 0 20px 0;
+  }
+  .page {
+    width: 550px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .main-image {
+    float: right;
+    width: 50%;
+    margin: 0 0 20px 20px;
+  }
+}

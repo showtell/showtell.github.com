@@ -2,73 +2,7 @@
 <html>
 <head>
   <title>Show and Tell for Makers | Ann Arbor</title>
-  <style type="text/css">
-    body {
-      margin: 0;
-      padding: 0;
-      font: 18px Helvetica, sans-serif;
-      color: #333;
-      background: #d2e1b8;
-    }
-    h1 {
-      color: #41762e;
-      margin: 0 0 10px 0;
-      line-height: 1em;
-    }
-    h2 {
-      font-size: 18px;
-      margin: 0 0 20px 0;
-    }
-    h2+h4 {
-      font-weight: normal;
-      font-size: 18px;
-      margin: -20px 0 20px 0;
-    }
-    .page {
-      background-color: #fff;
-      border: solid 1px #cda;
-      overflow: auto;
-      margin: 10px;
-      padding: 10px;
-    }
-    .when {
-    }
-    .main-image {
-      background: url('show_and_tell_for_makers.jpg') 50% 50%;
-      background-size: cover;
-      height: 200px;
-      border: solid 1px #ddd;
-      margin: 0 0 10px 10px;
-    }
-    .alert {
-      color: #c00;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    @media screen and (min-width: 450px) {
-      .main-image {
-        float: right;
-        width: 50%;
-        height: 305px;
-        background-size: auto;
-      }
-    }
-    @media screen and (min-width: 600px) {
-      h1 {
-        margin: 0 0 20px 0;
-      }
-      .page {
-        width: 550px;
-        margin: 20px auto;
-        padding: 20px;
-      }
-      .main-image {
-        float: right;
-        width: 50%;
-        margin: 0 0 20px 20px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript">
     var _gauges = _gauges || [];
     (function() {
@@ -84,17 +18,21 @@
   </script>
 </head>
 <body>
-  <div class="page">
+  <div class="page" itemscope itemtype="http://schema.org/Event">
     <h1>Show and Tell for&nbsp;Makers</h1>
-    <div class="alert">Note: Show and Tell is *cancelled* on January 17th. We are in the process of rescheduling for early February, stay tuned!</div>
-    <div class="main-image" title="Show and Tell for Makers"></div>
-    <div class="when">
-      <h2>TBA</h2>
-      <h4>7 - 9pm</h4>
+    <div class="main-image" title="Show and Tell for Makers" itemprop="name"></div>
+    <div class="when" itemprop="startdate" content="2013-02-28T19:00">
+        <h2>Thursday, February 28th</h2>
+        <h4>
+          7 - 9pm
+          <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Show%20%26%20Tell%20for%20Makers&dates=20130301T000000Z/20130301T020000Z&details=Show%20and%20Tell%20for%20Makers%20is%20a%20monthly%20meetup%20for%20technologists%20to%20share%20a%20recent%20small%20project.%20Instead%20of%20hacking%20something%20together%20in%20one%20caffeine-fueled%20weekend%2C%20we%20take%20our%20time%20and%20make%20something%20useful.&location=Workantile%2C%20118%20S.%20Main%20St.%20Ann%20Arbor%2C%20MI%2048104&trp=true&sprop=&sprop=name:">(add to calendar)</a>
+        </h4>
     </div>
-    <div class="where">
-      <h2>Workantile</h2>
-      <h4>118 S. Main St.<br />Ann Arbor, MI 48104</h4>
+    <div class="where" itemprop="location" itemscope itemtype="http://schema.org/Place">
+      <h2><a href="http://workantile.com" itemprop="url">Workantile</a></h2>
+      <h4 itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">118 S. Main St.</span><br>
+        <span itemprop="locality">Ann Arbor</span>, <span itemprop="addressRegion">MI</span> <span itemprop="postalCode">48104</span></h4>
       <p>Show and Tell for Makers is a monthly meetup for technologists to share a recent small project. Instead of hacking something together in one caffeine-fueled weekend, we take our time and make something useful.</p>
       <p>Some examples from prior events include:</p>
       <ul>
